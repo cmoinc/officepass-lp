@@ -1,0 +1,124 @@
+@charset "UTF-8";
+@font-face {
+    font-weight: 400;
+    src: url(../fonts/NotoSansJP-Regular.ttf) format("truetype");
+    font-family: "Noto Sans JP";
+    font-display: swap;
+  }
+  @font-face {
+    font-weight: 500;
+    src: url(../fonts/NotoSansJP-Medium.ttf) format("truetype");
+    font-family: "Noto Sans JP";
+    font-display: swap;
+  }
+  @font-face {
+    font-weight: 700;
+    src: url(../fonts/NotoSansJP-Bold.ttf) format("truetype");
+    font-family: "Noto Sans JP";
+    font-display: swap;
+  }
+  @font-face {
+    font-weight: 900;
+    src: url(../fonts/NotoSansJP-Black.ttf) format("truetype");
+    font-family: "Noto Sans JP";
+    font-display: swap;
+  }
+  @font-face {
+    font-weight: 700;
+    src: url(../fonts/Lato-Bold.ttf) format("truetype");
+    font-family: "Lato";
+    font-display: swap;
+  }
+  @font-face {
+    font-weight: 400;
+    src: url(../fonts/Lato-BoldItalic.ttf) format("truetype");
+    font-family: "Lato Italic";
+    font-display: swap;
+  }
+  @font-face {
+    font-weight: 700;
+    src: url(../fonts/Lato-BoldItalic.ttf) format("truetype");
+    font-family: "Lato Bold Italic";
+    font-display: swap;
+  }
+  @font-face {
+    font-weight: 900;
+    src: url(../fonts/Lato-BlackItalic.ttf) format("truetype");
+    font-family: "Lato Black Italic";
+    font-display: swap;
+  }
+
+  .header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  
+  .blue-btn{
+    margin-top: 20px;
+    margin-right: 80px;
+    padding-block: 10px;
+    padding-inline: 50px;
+    background-color: #003B71;
+    border-radius: 10px;
+    color: white;
+    font-family: Noto Sans JP;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .space{
+    height: 50px;
+  }
+
+  .banner{
+    display: block;
+    justify-items: center;
+    background-color:navy;
+    height: 30vw;
+  }
+
+  .banner-txt{
+    font-size: 6vw;
+  }
+
+  .orange-btn{
+    display:block;
+    padding-block: 15px;
+    padding-inline: 50px;
+    background-color: #E98F00;
+    border-radius: 10px;
+    color: white;
+    font-family: Noto Sans JP;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  body{
+    margin: 0px;
+  }
+
+  h1{
+    font-family: Noto Sans JP;
+    font-size: 5vw;
+    color: white;
+    font-weight: bolder;
+  }
+
+  h2{
+    font-family: Noto Sans JP;
+    color: #003B71;
+  }
+
+  h3{
+    font-family: Noto Sans JP;
+  }
+
+  p{
+    font-family: Noto Sans JP;
+  }
