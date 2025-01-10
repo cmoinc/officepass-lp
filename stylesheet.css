@@ -169,7 +169,12 @@
   }
 
   /* map */
-
+  .map{
+    height: auto;
+    width: 200px;
+    margin-block: 10%
+     ;
+  }
 
   /* scene */
   h4{
@@ -263,6 +268,30 @@
   }
 
   /* price */
+  .price_content{
+    margin-top: 20px;
+    justify-items: right;
+    padding-block: 100px;
+    padding-inline: 10%;
+    background-image: url("./assets/image/stock-photo-young-asian-business-woman-office-employee-using-laptop-watching-webinar-female-professional-2184502329.jpg");
+    background-position: right 20px;
+    background-repeat: no-repeat;  
+    background-size: cover;
+    
+  }
+  .align{
+    width: 50%;
+    justify-items: center;
+    
+  }
+  .price_title{
+    background-color: #003B71;
+    text-align: center;
+    padding: 20px;
+    width: 200px;
+    border-radius: 30px;
+    color: white;
+  }
 
   .price_bg{
     margin-top: 10%;
@@ -272,6 +301,22 @@
     background-repeat: no-repeat;
     background-size: 650px;
     background-image: url("./assets/illustration/price.png");
+  }
+  .price_box{
+    width: 300px;
+    padding-block: 5px;
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: white;
+    text-align: center;
+  }
+
+  .category{
+    color: #003B71;
+  }
+
+  .price_amount{
+    color: #E98F00;
   }
 
   /* faq */
@@ -353,4 +398,55 @@
 
   input:checked ~ h1 ~ div.p{
     max-height:100px;
+  }
+
+  @keyframes slides {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  
+  .logos {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 6%;
+  }
+  
+  .logos:before, .logos:after {
+    position: absolute;
+    top: 0;
+    content: '';
+    width: 200px;
+    height: 100%;
+    z-index: 2;
+  }
+  
+  .logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255,255,255,0), rgb(255, 255, 255));
+  }
+  
+  .logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255,255,255,0), rgb(255, 255, 255));
+  }
+  
+  .logo_items {
+    display: inline-block;
+    animation: 50s slides infinite linear;
+  }
+  
+  .logos:hover .logo_items {
+    animation-play-state: paused;
+  }
+  
+  .logo_items img{
+    height: 45px;
+    margin-inline: 20px;
   }
