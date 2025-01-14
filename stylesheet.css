@@ -168,12 +168,46 @@
 
   }
 
+  .space_container{
+    margin-inline: 15%;
+    margin-block: 5%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    justify-items: center;
+    
+  }
+  .container1{
+    border: solid 1px #003B71;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 30vw;
+  }
+  .space_img{
+    width: 100%;
+  }
+
+  .space_title{
+    font-weight: bold;
+    margin-inline: 20px;
+    font-size: 14pt;
+    color: #003B71;
+  }
+
+  .space_txt{
+    margin-inline: 20px;
+    margin-bottom: 4vw;
+    color: #003B71;
+  }
+
   /* map */
   .map{
+    margin-inline: 15%;
+    margin-bottom: 10%;
+  }
+  .map_img{
     height: auto;
-    width: 200px;
-    margin-block: 10%
-     ;
+    width: 100%;
   }
 
   /* scene */
@@ -186,6 +220,10 @@
     background-color: #D9D9D9;
     padding-top: 3px;
     padding-bottom: 30px;
+  }
+
+  .scene_img{
+    width: 100%;
   }
   .scene_bg{
     margin-top: 5%;
@@ -201,14 +239,14 @@
     margin-block: 30px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px
-    ;
+    gap: 20px;
+    justify-content: center;
+    justify-items: center;
     
   }
 
   .container{
     margin-right: 10%;
-    align-items: center;
     text-align: center;
     background-color: #003B71;
     
@@ -227,6 +265,47 @@
     background-repeat: no-repeat;
     background-size: 650px;
     background-image: url("./assets/illustration/usage.png");
+  }
+  .usage_flex{
+    display: flex;
+    margin-inline: 15%;
+    gap: 30px;
+    margin-block: 5%;
+  }
+
+  .usage_num{
+    position:relative;
+    z-index: 5;
+    color: white;
+    font-family: Lato;
+    font-size:xx-large;
+    font-weight: bold;
+    background-color: #003B71;
+    border-radius: 100%;
+    height: 70px;
+    width: 70px;
+    text-align: center;
+    align-content: center;
+    margin-bottom: -30px;
+  }
+  .usage_container{
+    justify-self: center;
+    justify-items: center;
+    margin-bottom: 5%;
+  }
+  .icon_box{
+    z-index: 1;
+    background-color: white;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    padding-inline: 30px;
+    border-radius: 20px;
+  }
+  
+  .usage_txt{
+    color: #004F9D;
+    font-weight: bold;
+    text-align: center;
   }
 
   /* apply */
@@ -259,6 +338,7 @@
   /* merit */
   .merit_bg{
     margin-top: 10%;
+    margin-bottom: 5%;
     align-content: center;
     height: 150px;
     background-position:center;
@@ -267,13 +347,54 @@
     background-image: url("./assets/illustration/merit.png");
   }
 
+  .merit_box{
+    display: flex;
+    gap: 40px;
+    line-height: 1;
+    color: white;
+    background-color: #003B71;
+    margin-inline: 15%;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    padding: 15px 40px;
+  }
+
+  .merit_box_white{
+    display: flex;
+    gap: 40px
+    ;
+    color: #003B71;
+    line-height: 1;
+    border: solid 1px #003B71;
+    margin-inline: 15%;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    padding: 12px 40px;
+  }
+
+  .merit_text{
+    font-weight: bold;
+    font-size: 16pt;
+  }
+  .merit_text_s{
+    font-size: 12pt;
+  }
+
+  .icon{
+    width: 55px;
+  }
+
+  .icon_b{
+    width: 40px;
+  }
+
   /* price */
   .price_content{
     margin-top: 20px;
     justify-items: right;
     padding-block: 100px;
     padding-inline: 10%;
-    background-image: url("./assets/image/stock-photo-young-asian-business-woman-office-employee-using-laptop-watching-webinar-female-professional-2184502329.jpg");
+    background-image: url("./assets/image/stockwoman.png");
     background-position: right 20px;
     background-repeat: no-repeat;  
     background-size: cover;
@@ -291,6 +412,8 @@
     width: 200px;
     border-radius: 30px;
     color: white;
+    font-weight: bold;
+    font-size: large;
   }
 
   .price_bg{
@@ -304,7 +427,7 @@
   }
   .price_box{
     width: 300px;
-    padding-block: 5px;
+    padding-block: 3px;
     margin-top: 20px;
     border-radius: 20px;
     background-color: white;
@@ -313,20 +436,31 @@
 
   .category{
     color: #003B71;
+    font-size: small;
+    
   }
 
   .price_amount{
     color: #E98F00;
+    font-weight: bold;
+    line-height: 1;
+    margin-top: -10px;
+  }
+
+  .amount{
+    font-size: 28px;
+
   }
 
   /* faq */
   .faq{
     margin-top: 10%;
     z-index: 1;
+    min-height: 800px;
     background-image: url(./assets/illustration/faqbg.png);
-    background-position: bottom 40px;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     align-content: center;
 
     
@@ -372,8 +506,7 @@
   label::before{
     content:"";
     display: inline-block;
-    /* border: 10px solid transparent;
-    border-left:12px solid #003B71; */
+
   }
   label{
     cursor: pointer;
@@ -393,11 +526,12 @@
     box-shadow:0 0 10px 0 rgba(0, 0, 0, 0.2);
   }
   div.p p {
-    padding:2em;
+    padding:0 2em;
+    color: #003B71;
   }
 
   input:checked ~ h1 ~ div.p{
-    max-height:100px;
+    max-height:400px;
   }
 
   @keyframes slides {
@@ -449,4 +583,9 @@
   .logo_items img{
     height: 45px;
     margin-inline: 20px;
+  }
+
+  footer{
+    height: 200px;
+    background-color: #004F9D;
   }
