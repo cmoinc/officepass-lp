@@ -57,7 +57,7 @@
     padding: 30px;
     display: flex;
     justify-content: space-between;
-    box-shadow: inset;
+    box-shadow: 0 0.3em 0.3em rgba(0, 0, 0, 0.2);
   }
 
   
