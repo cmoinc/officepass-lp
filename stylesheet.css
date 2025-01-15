@@ -268,9 +268,15 @@
   }
   .usage_flex{
     display: flex;
-    margin-inline: 15%;
-    gap: 30px;
+    justify-content: center;
+    margin-inline:;
+    gap: 40px;
     margin-block: 5%;
+  }
+  .icon_use{
+    display: block;
+    width: 150px;
+    justify-self: center;
   }
 
   .usage_num{
@@ -282,26 +288,26 @@
     font-weight: bold;
     background-color: #003B71;
     border-radius: 100%;
-    height: 70px;
-    width: 70px;
+    height: 80px;
+    width: 80px;
     text-align: center;
     align-content: center;
     margin-bottom: -30px;
   }
   .usage_container{
-    justify-self: center;
     justify-items: center;
     margin-bottom: 5%;
   }
   .icon_box{
     z-index: 1;
+    align-content: center;
+    justify-content: center;
     background-color: white;
-    padding-top: 40px;
-    padding-bottom: 20px;
-    padding-inline: 30px;
+    width: 250px;
+    height: 250px;
     border-radius: 20px;
   }
-  
+
   .usage_txt{
     color: #004F9D;
     font-weight: bold;
