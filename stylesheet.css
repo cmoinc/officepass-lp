@@ -270,13 +270,35 @@
     display: flex;
     justify-content: center;
     margin-inline:;
-    gap: 40px;
+    gap: 0px;
     margin-block: 5%;
   }
   .icon_use{
     display: block;
     width: 150px;
     justify-self: center;
+  }
+ 
+  .triangle-right {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-left: 20px solid crimson;
+    border-bottom: 10px solid transparent;
+  }
+  .line{
+    border: solid crimson;
+    border-width: 0 0px 5px 0;
+    width: 30px;
+    display:block;
+   
+  }
+  .line_container{
+    align-content: center;
+  }
+ 
+  .arrow_container{
+    align-content: center;
   }
 
   .usage_num{
