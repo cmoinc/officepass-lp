@@ -57,7 +57,13 @@
     padding: 30px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     box-shadow: 0 0.3em 0.3em rgba(0, 0, 0, 0.2);
+  }
+  @media (max-width:680px){
+    .header{
+      padding: 20px;
+    }
   }
 
   
@@ -72,6 +78,18 @@
     font-family: Noto Sans JP;
     font-weight: bold;
     text-decoration: none;
+  }
+
+  @media (max-width:600px){
+    .blue-btn{
+      padding-inline: 30px;
+      font-size: 14px;
+      margin-right: 20px;
+     }
+    .header_logo{
+      width: 200px;
+  
+    }
   }
   
   .banner{
@@ -100,6 +118,9 @@
     font-family: Noto Sans JP;
     font-weight: bold;
     text-decoration: none;
+  }
+  @media (max-width:768px){
+    
   }
 
   .orange-btn:hover{
