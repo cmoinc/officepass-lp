@@ -120,7 +120,7 @@
     text-decoration: none;
   }
   @media (max-width:768px){
-    
+
   }
 
   .orange-btn:hover{
@@ -131,6 +131,7 @@
 
   body{
     margin: 0px;
+    overflow-x: hidden
   }
 
   h1{
