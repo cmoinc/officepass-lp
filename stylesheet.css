@@ -104,8 +104,19 @@
     height: 42vw;
   }
 
+  @media (max-width:678px){
+    .banner{
+      height: 62vw;
+    }
+  }
+
   .banner-txt{
     font-size: 6vw;
+  }
+  @media (max-width:678px){
+    .banner-txt{
+      font-size: 9vw;
+    }
   }
 
   .orange-btn{
@@ -123,7 +134,10 @@
     text-decoration: none;
   }
   @media (max-width:768px){
-
+    .orange-btn{
+      font-size: 14px;
+      margin-top: 20px;
+    }
   }
 
   .orange-btn:hover{
@@ -143,6 +157,11 @@
     color: white;
     font-weight: bolder;
     margin: 0;
+  }
+  @media (max-width:678px){
+    h1{
+      font-size: 7vw;
+    }
   }
 
   h2{
@@ -454,6 +473,8 @@
       margin-inline: 5%;
       font-weight: bold;
       padding: 30px 20px;
+      justify-items: center;
+      align-items: center;
 
     }
   }
