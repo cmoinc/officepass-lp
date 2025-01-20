@@ -301,6 +301,7 @@
   @media (max-width:768px){
     .usage_flex{
       flex-direction: column;
+      justify-items: center;
     }
   }
   .icon_use{
@@ -322,6 +323,14 @@
     width: 30px;
     display:block;
    
+  }
+  @media (max-width:768px){
+    .triangle-right{
+      display: none;
+    }
+    .line{
+      display: none;
+    }
   }
   .line_container{
     align-content: center;
@@ -349,6 +358,11 @@
   .usage_container{
     justify-items: center;
     margin-bottom: 5%;
+  }
+  @media (max-width:678px){
+    .usage_container{
+      justify-content: center;
+    }
   }
   .icon_box{
     z-index: 1;
