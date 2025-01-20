@@ -62,6 +62,7 @@
   }
   @media (max-width:678px){
     .header{
+      padding: 20px;
       width:auto;
     }
   }
