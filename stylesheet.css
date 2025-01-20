@@ -550,6 +550,12 @@
     justify-items: center;
     
   }
+  @media (max-width:768px){
+    .align{
+      justify-items: center;
+      justify-items: center;
+    }
+  }
   .price_title{
     background-color: #003B71;
     text-align: center;
@@ -613,7 +619,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     align-content: center;
-
+    justify-items: center;
     
   }  
   .faq_txt{
