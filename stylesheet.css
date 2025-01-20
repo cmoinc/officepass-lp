@@ -651,10 +651,13 @@
     background-repeat: no-repeat;
     background-size: cover;
     align-content: center;
-    justify-content: center;
     justify-items: center;
-    
   }  
+  @media (max-width:678px){
+    .faq{
+      justify-content: center;
+    }
+  }
   .faq_txt{
     padding-top: 5%;
     padding-bottom: 10px;
