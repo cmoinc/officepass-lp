@@ -192,6 +192,12 @@
     background-image: url("./assets/illustration/space.png");
 
   }
+  @media (max-width:678px){
+   .space_bg{
+    background-size: 460px;
+   }
+    
+  }
 
   .space_container{
     margin-inline: 15%;
@@ -259,6 +265,12 @@
     background-size: 650px;
     background-image: url("./assets/illustration/scene.png");
   }
+  @media (max-width:678px){
+    .scene_bg{
+     background-size: 460px;
+    }
+     
+   }
   .scene_container{
     margin-inline: 15%;
     margin-block: 30px;
@@ -291,6 +303,12 @@
     background-size: 650px;
     background-image: url("./assets/illustration/usage.png");
   }
+  @media (max-width:678px){
+    .usage_bg{
+     background-size: 450px;
+    }
+     
+   }
   .usage_flex{
     display: flex;
     justify-content: center;
@@ -418,6 +436,11 @@
     background-size: 650px;
     background-image: url("./assets/illustration/merit.png");
   }
+  @media (max-width:678px){
+    .merit_bg{
+     background-size: 460px;
+    } 
+   }
 
   .merit_box{
     display: flex;
@@ -430,7 +453,6 @@
     margin-bottom: 15px;
     padding: 15px 40px;
   }
-
   .merit_box_white{
     display: flex;
     gap: 40px
@@ -443,13 +465,34 @@
     border-radius: 20px;
     padding: 12px 40px;
   }
+  @media (max-width:678px){
+    .merit_box{
+      flex-direction: column;
+      align-items: center;
+      padding: 40px;
+      gap: 10px;
+    }
+    .merit_box_white{
+      flex-direction: column;
+      align-items: center;
+      padding: 40px;
+      gap: 10px;
+    }
+  }
 
   .merit_text{
     font-weight: bold;
+    line-height: 1.5;
     font-size: 16pt;
+  }
+  @media (max-width:678px){
+    .merit_text{
+      text-align: center;
+    }
   }
   .merit_text_s{
     font-size: 12pt;
+    line-height: 1.5;
   }
 
   .icon{
@@ -503,6 +546,12 @@
     background-size: 650px;
     background-image: url("./assets/illustration/price.png");
   }
+  @media (max-width:678px){
+    .price_bg{
+     background-size: 460px;
+    }
+     
+   }
   .price_box{
     width: 300px;
     padding-block: 3px;
