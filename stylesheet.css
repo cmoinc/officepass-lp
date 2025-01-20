@@ -475,6 +475,8 @@
       padding: 30px 20px;
       justify-items: center;
       align-items: center;
+      justify-content: center;
+      align-content: center;
 
     }
   }
