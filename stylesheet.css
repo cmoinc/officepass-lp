@@ -336,7 +336,7 @@
   .usage_flex{
     display: flex;
     justify-content: center;
-    margin-inline:;
+    margin-inline: auto;
     gap: 0px;
     margin-block: 5%;
   }
@@ -636,7 +636,7 @@
   }
   div.c{
     position: relative;
-    margin:2em;
+    margin: 2em 0;
   }
 
   input{
