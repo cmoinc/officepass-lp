@@ -595,6 +595,8 @@
       margin-inline: 20px;
       flex-direction: column;
       align-items: center;
+      height: 200px;
+      min-width: 300px;
       padding: 40px;
       gap: 10px;
     }
@@ -602,6 +604,7 @@
       margin-inline: 20px;
       flex-direction: column;
       align-items: center;
+      min-width: 300px;
       padding: 40px;
       gap: 10px;
     }
@@ -615,6 +618,11 @@
   @media (max-width:768px){
     .merit_text{
       text-align: center;
+    }
+    .merit_flex{
+      display: flex;
+      overflow-x: scroll;
+      overflow-y: hidden;
     }
   }
   .merit_text_s{
