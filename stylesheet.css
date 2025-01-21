@@ -742,6 +742,7 @@
   @media (max-width:768px){
     .faq{
       justify-content: center;
+      justify-items: center;
       align-items: center;
     }
   }
@@ -779,7 +780,7 @@
 
   @media (max-width:768px){
     .c h1{
-      width: 60vw;
+      width:70vw;
     }
   }
 
@@ -813,7 +814,7 @@
   }
   @media (max-width:768px){
     div.p{
-      width: 68vw;
+      width: 77vw;
     }
   }
   div.p p {
