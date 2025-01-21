@@ -80,6 +80,11 @@
     font-weight: bold;
     text-decoration: none;
   }
+  .blue-btn:hover{
+    background-color: #D9D9D9;
+    color: #003B71;
+    transition-duration: 500ms;
+  }
 
   @media (max-width:600px){
     .blue-btn{
@@ -137,13 +142,16 @@
     .orange-btn{
       font-size: 14px;
       margin-top: 20px;
+      width: auto;
     }
   }
 
   .orange-btn:hover{
     background-color: white;
     color: #E98F00;
-    transition-duration: 500ms
+    transition-duration: 500ms;
+    font-size: 15px;
+    width: 28vw;
   }
 
   body{
@@ -240,8 +248,7 @@
   }
   @media (max-width:768px){
     .space_container{
-      grid-template-columns: repeat(1, 1fr);
-      margin-inline: 20px;
+    
     }
     
   }
@@ -251,9 +258,28 @@
     overflow: hidden;
     width: 30vw;
   }
+
   @media (max-width:768px){
-    .container1{
-      width: auto;
+    
+    .container1 {
+      width: 80%;
+      margin-right: 20px;
+      counter-increment: gallery-cell;
+    }
+
+    * {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    
+    /* cell number */
+    .container1:before {
+      display: block;
+      text-align: center;
+      content: counter(gallery-cell);
+      line-height: 200px;
+      font-size: 80px;
+      color: white;
     }
   }
   .space_img{
@@ -284,6 +310,7 @@
       margin-top: 7%;
       margin-bottom: 0;
     }
+    
   }
   .map_img{
     height: auto;
@@ -487,6 +514,13 @@
     font-weight: bold;
     text-decoration: none;
   }
+  .apply_btn:hover{
+    background-color: white;
+    color: #E98F00;
+    font-size: 15px;
+    transition-duration: 500ms;
+    width: 28vw;
+  }
   @media (max-width:768px){
     .apply{
       margin-inline: 20px;
@@ -496,7 +530,10 @@
       align-items: center;
       justify-content: center;
       align-content: center;
-
+    }
+    .apply_btn{
+      margin: 15px 30px;
+      width: auto;
     }
   }
 
@@ -677,6 +714,7 @@
   @media (max-width:768px){
     .faq{
       justify-content: center;
+      align-items: center;
     }
   }
   .faq_txt{
