@@ -86,7 +86,7 @@
     transition-duration: 500ms;
   }
 
-  @media (max-width:600px){
+  @media (max-width:768px){
     .blue-btn{
       display: block;
       padding-inline: 30px;
