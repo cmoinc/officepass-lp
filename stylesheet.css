@@ -248,7 +248,11 @@
   }
   @media (max-width:768px){
     .space_container{
-    
+      display: flex;
+      gap: 10px;
+      overflow-x: scroll;
+      scroll-snap-type: x mandatory;
+      margin-inline: 0;
     }
     
   }
@@ -256,30 +260,25 @@
     border: solid 1px #003B71;
     border-radius: 15px;
     overflow: hidden;
-    width: 30vw;
   }
-
+  @media (min-width:768px){
+    .container1{
+      width: 30vw;
+    }
+  }
   @media (max-width:768px){
     
     .container1 {
-      width: 80%;
-      margin-right: 20px;
-      counter-increment: gallery-cell;
+      width: 1000px;
+      height: auto;
+      scroll-snap-align: center;
+      
     }
 
-    * {
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-    }
     
     /* cell number */
     .container1:before {
-      display: block;
-      text-align: center;
-      content: counter(gallery-cell);
-      line-height: 200px;
-      font-size: 80px;
-      color: white;
+      
     }
   }
   .space_img{
@@ -404,18 +403,30 @@
     margin-inline: auto;
     gap: 0px;
     margin-block: 5%;
+    list-style: none;
   }
   @media (max-width:768px){
     .usage_flex{
-      flex-direction: column;
-      justify-items: center;
-      align-items: center;
+      margin-inline: 10vw;
+      justify-content: left;
+      overflow-x: scroll;
+      gap: 10px;
+    
     }
+    .usage_container{
+      scroll-snap-align: center;
+    }
+
   }
   .icon_use{
     display: block;
     width: 150px;
     justify-self: center;
+  }
+  @media (max-width:768px){
+    .icon_use{
+      width: 200px;
+    }
   }
  
   .triangle-right {
@@ -467,11 +478,7 @@
     justify-items: center;
     margin-bottom: 5%;
   }
-  @media (max-width:768px){
-    .usage_container{
-      justify-content: center;
-    }
-  }
+ 
   .icon_box{
     z-index: 1;
     align-content: center;
@@ -480,6 +487,12 @@
     width: 250px;
     height: 250px;
     border-radius: 20px;
+  }
+  @media (max-width:768px){
+    .icon_box{
+      width: 300px;
+      height: 300px;
+    }
   }
 
   .usage_txt{
