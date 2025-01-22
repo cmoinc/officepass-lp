@@ -250,8 +250,6 @@
     .space_container{
       grid-template-columns: repeat(4, 1fr);
       gap: 10px;
-      overflow-x: scroll;
-      scroll-snap-type: x mandatory;
       margin-inline: 0;
     }
     
@@ -276,6 +274,8 @@
       width: 55vw;
       height: auto;
       scroll-snap-align: center;
+      display: inline-block;
+      animation: 30s slides infinite linear;
       
     }
 
@@ -362,12 +362,10 @@
   }
   @media (max-width:768px){
     .scene_container{
+      display: ;
       grid-template-columns: repeat(4, 1fr);
       margin-inline: 20px;
-      overflow-x: scroll;
-      justify-content: left;
-    }
-    
+    } 
   }
 
   .container{
@@ -379,9 +377,9 @@
 
   @media (max-width:768px){
     .container{
-      margin-right: 0;
-      width: 50vw;
+      display: ;
     }
+   
   }
 
   /* usage */
@@ -603,7 +601,7 @@
       flex-direction: column;
       align-items: center;
       height: 200px;
-      min-width: 300px;
+      min-width: 65vw;
       padding: 40px;
       gap: 10px;
     }
@@ -611,7 +609,7 @@
       margin-inline: 20px;
       flex-direction: column;
       align-items: center;
-      min-width: 300px;
+      min-width: 65vw;
       padding: 40px;
       gap: 10px;
     }
@@ -887,3 +885,5 @@
     height: 200px;
     background-color: #004F9D;
   }
+
+
