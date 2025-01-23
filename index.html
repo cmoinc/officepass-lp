@@ -112,6 +112,7 @@
                 <div class="scene_bg">
                     <h2>個人での利用シーン</h2>
                 </div> 
+                <button class="carousel-btn prev" onclick="scrollCarousel(-1)">&#8249;</button>
                 <div class="scene_container">
                     <div class="container">
                         <h4>個室でオンラインミーティングも</h4>
@@ -130,7 +131,19 @@
                         <img src="./assets/image/scene4.jpg" alt="" class="scene_img">
                     </div>
                 </div>
+                <button class="carousel-btn next" onclick="scrollCarousel(1)">&#8250;</button>
             </div>
+            <script>
+                function scrollCarousel(direction) {
+                  const container = document.querySelector('.scene_container');
+                  const scrollAmount = container.offsetWidth;
+                  container.scrollBy({
+                    left: direction * scrollAmount,
+                    behavior: 'smooth'
+                  });
+                }
+              </script>
+              
             <div class="usage">
                 <div class="usage_bg">
                     <h2>利用方法</h2>
