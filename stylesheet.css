@@ -471,6 +471,8 @@
       scroll-snap-align: center;
       text-align: center;
       padding: 0px;
+      justify-content: center;
+      align-items: center;
     }
 
     .usage {
@@ -557,6 +559,11 @@
     text-align: center;
     align-content: center;
     margin-bottom: -35px;
+  }
+  @media (max-width){
+    .usage_num{
+
+    }
   }
   .usage_container{
     justify-items: center;
