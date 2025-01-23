@@ -112,7 +112,7 @@
                 <div class="scene_bg">
                     <h2>個人での利用シーン</h2>
                 </div> 
-                <button class="carousel-btn prev" onclick="scrollCarousel(-1)">&#8249;</button>
+                <button class="carousel-btn prev" onclick="scrollCarousel('.scene_container', -1)">&#8249;</button>
                 <div class="scene_container">
                     <div class="container">
                         <h4>個室でオンラインミーティングも</h4>
@@ -131,23 +131,13 @@
                         <img src="./assets/image/scene4.jpg" alt="" class="scene_img">
                     </div>
                 </div>
-                <button class="carousel-btn next" onclick="scrollCarousel(1)">&#8250;</button>
+                <button class="carousel-btn next" onclick="scrollCarousel('.scene_container', 1)">&#8250;</button>
             </div>
-            <script>
-                function scrollCarousel(direction) {
-                  const container = document.querySelector('.scene_container');
-                  const scrollAmount = container.offsetWidth;
-                  container.scrollBy({
-                    left: direction * scrollAmount,
-                    behavior: 'smooth'
-                  });
-                }
-              </script>
-              
             <div class="usage">
                 <div class="usage_bg">
                     <h2>利用方法</h2>
                 </div>
+                <button class="carousel-btn-usage prev" onclick="scrollCarousel('.usage_flex', -1)">&#8249;</button>
                 <div class="usage_flex">
                     <div class="usage_container">
                        <div class="usage_num">1</div>
@@ -181,12 +171,12 @@
                          <img class="icon_use" src="./assets/illustration/howtouse_il_03.svg" alt="">
                         </div>
                         <p class="usage_txt">二次元コード読み込み後、<br>表示された画面を受付に提示</p>
-                    </div>
-                    
+                    </div>  
                 </div>
-                
+                <button class="carousel-btn-usage next" onclick="scrollCarousel('.usage_flex', 1)">&#8250;</button>
             </div>
-            
+         
+              
             <div class="">
                 <div class="apply">
                     <p>個人もしくは個人事業主でお申し込みの方</p>
@@ -197,6 +187,7 @@
                 <div class="merit_bg">
                     <h2>利用するメリット</h2>
                 </div>
+                <button class="carousel-btn_merit prev" onclick="scrollCarousel('.merit_flex', -1)">&#8249;</button>
                 <div class="merit_flex">
                 <div class="merit_box">
                     <img class="icon_b" src="./assets/illustration/location-dot-solid.svg" alt="location">
@@ -233,6 +224,8 @@
                         <p class="merit_text_s">チェックインまでアプリ1つで完結!</p>
                     </div>
                 </div>
+                </div>
+                <button class="carousel-btn_merit next" onclick="scrollCarousel('.merit_flex', 1)">&#8250;</button>
             </div>
             <div class="price">
                 <div class="price_bg">
@@ -302,6 +295,17 @@
                       <p>申し込み書が受理され、審査を通過しましたら管理画面へのアクセス情報が記載されたメールをお送りさせていただきます。管理画面にログインいただくと、「法人コード」と「初回登録ガイド（利用マニュアル）」が取り出せますので、ご利用者様に配布ください。ご利用者様の手続きが完了次第、すぐに利用を開始いただけます。審査には1～3営業日程度お時間をいただきます。</p>
                     </div>
                 </div>
+                <script>
+                    function scrollCarousel(containerSelector, direction) {
+                      const container = document.querySelector(containerSelector);
+                      const scrollAmount = container.offsetWidth;
+                      container.scrollBy({
+                        left: direction * scrollAmount,
+                        behavior: 'smooth'
+                      });
+                    }
+                  </script>
+                  
             </div>
         </div>
     </main>
