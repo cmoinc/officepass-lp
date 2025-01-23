@@ -369,7 +369,7 @@
     
   }
 
-  @media (max-width:768px) {
+  @media ( flex: 0 0 100%;) {
     .scene_container {
       display: flex;
       justify-content: left;
@@ -413,6 +413,12 @@
   
     .carousel-btn.next {
       right: 10px;
+    }
+  }
+
+  @media (min-width:768px){
+    .carousel-btn {
+      display: hidden;
     }
   }
   
@@ -487,6 +493,12 @@
     }
     .carousel-btn-usage.next{
       right: 10px;
+    }
+  }
+
+  @media (min-width:768px){
+    .carousel-btn-usage {
+      display: hidden;
     }
   }
   .icon_use{
@@ -708,6 +720,12 @@
   
     .carousel-btn_merit.next {
       right: 10px;
+    }
+  }
+
+  @media (min-width:768px){
+    .carousel-btn_merit {
+      display: hidden;
     }
   }
 
