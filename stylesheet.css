@@ -562,7 +562,15 @@
   }
   @media (max-width){
     .usage_num{
-
+      .usage_num {
+        margin: 0 auto; /* Centers horizontally if it's block-level */
+        text-align: center; /* Centers inline text within the element */
+        display: flex; /* Use flexbox for better control */
+        justify-content: center;
+        align-items: center;
+        width: fit-content; /* Optional, ensures no extra space */
+    }
+    
     }
   }
   .usage_container{
