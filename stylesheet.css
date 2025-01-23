@@ -369,8 +369,9 @@
     
   }
 
-  @media ( flex: 0 0 100%;) {
+  @media (max-width:768px) {
     .scene_container {
+      margin-inline: 20px;
       display: flex;
       justify-content: left;
       overflow-x: scroll;
@@ -663,8 +664,7 @@
   }
   .merit_box_white{
     display: flex;
-    gap: 40px
-    ;
+    gap: 40px;
     color: #003B71;
     line-height: 1;
     border: solid 1px #003B71;
