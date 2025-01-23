@@ -147,8 +147,8 @@
   }
 
   .orange-btn:hover{
-    background-color: white;
-    color: #E98F00;
+    background-color: #D9D9D9;
+    color: #003B71;
     transition-duration: 500ms;
     font-size: 15px;
     width: 28vw;
