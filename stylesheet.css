@@ -219,6 +219,9 @@
   }
 
   /* space */
+  .space{
+    overflow: hidden;
+  }
 
   .space_bg{
     margin-top: 10%;
@@ -327,6 +330,7 @@
     background-color: #D9D9D9;
     padding-top: 3px;
     padding-bottom: 30px;
+    overflow: hidden;
   }
 
   .scene_img{
@@ -417,6 +421,7 @@
   .usage{
     background-color: #F6F6F6;
     padding-top: 50px;
+    overflow: hidden;
   }
 
   .usage_bg{
@@ -656,6 +661,9 @@
     border-radius: 20px;
     padding: 12px 40px;
   }
+  .merit{
+    overflow: hidden;
+  }
   @media (max-width:768px){
     .merit{
       position: relative;
@@ -737,6 +745,9 @@
   }
 
   /* price */
+  .price{
+    overflow: hidden;
+  }
   .price_content{
     margin-top: 20px;
     justify-items: right;
@@ -829,6 +840,7 @@
     background-size: cover;
     align-content: center;
     justify-items: center;
+    overflow: hidden;
   }  
   @media (max-width:768px){
     .faq{
