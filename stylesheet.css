@@ -103,6 +103,7 @@
   .banner{
     justify-items: center;
     align-content: center;
+    place-items: center;
     background-image: url("./assets/image/bannercover.png");
     background-position:center;
     background-size: 100%;
@@ -117,6 +118,7 @@
 
   .banner-txt{
     font-size: 8vw;
+    margin: auto;
   }
   @media (max-width:768px){
     .banner-txt{
