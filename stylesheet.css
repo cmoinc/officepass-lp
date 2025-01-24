@@ -800,6 +800,7 @@
 
   @media (max-width:768px){
     .price_content{
+      display: grid;
       justify-items: center;
     }
   }
