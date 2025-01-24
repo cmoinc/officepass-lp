@@ -470,6 +470,7 @@
       display: none; 
     }
     .usage_container{
+      display: grid;
       min-height: 0;
       flex: 0 0 100%; 
     }
