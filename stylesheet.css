@@ -392,6 +392,8 @@
       scroll-snap-align: center;
       text-align: center;
       padding: 0px;
+      gap: 0;
+      margin-inline: 0;
     }
   
     .scene {
@@ -919,7 +921,7 @@
   @media (max-width:768px){
     .c h1{
       width:auto;
-      margin-inline: 20px;
+      margin-inline: 18px;
     }
   }
 
