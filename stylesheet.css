@@ -917,7 +917,8 @@
 
   @media (max-width:768px){
     .c h1{
-      width:70vw;
+      width:auto;
+      margin-inline: 20px;
     }
   }
 
@@ -951,7 +952,9 @@
   }
   @media (max-width:768px){
     div.p{
-      width: 77vw;
+      justify-self: center;
+      width: auto;
+      margin-inline: 20px;
     }
   }
   div.p p {
