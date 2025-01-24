@@ -374,7 +374,7 @@
 
   @media (max-width:768px) {
     .scene_container {
-      margin-inline: 20px;
+      margin-inline: 0px;
       display: flex;
       justify-content: left;
       overflow-x: scroll;
@@ -512,6 +512,7 @@
   @media (max-width:768px){
     .icon_use{
       width: 200px;
+      display: grid;
     }
   }
  
