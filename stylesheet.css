@@ -468,6 +468,7 @@
       scroll-behavior: smooth;
       justify-content: left;
       gap: 0px;
+      margin-inline: 0;
     }
     .usage_flex::-webkit-scrollbar {
       display: none; 
