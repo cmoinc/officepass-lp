@@ -877,6 +877,7 @@
   }  
   @media (max-width:768px){
     .faq{
+      display: grid;
       justify-content: center;
       justify-items: center;
       align-items: center;
