@@ -798,6 +798,7 @@
 
   @media (max-width:768px){
     .price_content{
+      padding-inline: 0;
       justify-items: center;
     }
   }
@@ -808,8 +809,9 @@
   }
   @media (max-width:768px){
     .align{
-      justify-items: center;
-      justify-items: center;
+      padding-inline: 0;
+      display: grid;
+      justify-content: center;
     }
   }
   .price_title{
