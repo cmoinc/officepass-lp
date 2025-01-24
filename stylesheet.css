@@ -467,6 +467,7 @@
       display: none; 
     }
     .usage_container{
+      min-height: 0;
       flex: 0 0 100%; 
     }
 
