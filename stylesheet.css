@@ -467,13 +467,14 @@
       scroll-snap-type: x mandatory;
       scroll-behavior: smooth;
       justify-content: left;
-      gap: 10px;
+      gap: 0px;
     }
     .usage_flex::-webkit-scrollbar {
       display: none; 
     }
     .usage_container{
       display: grid;
+      margin-inline: 0;
       min-height: 0;
       flex: 0 0 100%; 
     }
