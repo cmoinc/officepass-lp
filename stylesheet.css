@@ -415,6 +415,7 @@
       transform: translateY(-50%);
       background: grey;
       color: #D9D9D9;
+      box-shadow: 0px 2px 4px 1px #363737;
       font-size: 30pt;
       border: none;
       padding: 0 15px;
@@ -498,6 +499,7 @@
       transform: translateY(-50%);
       background: grey;
       color: #D9D9D9;
+      box-shadow: 0px 2px 4px 1px #363737;
       font-size: 30pt;
       border: none;
       padding: 0 15px;
@@ -736,6 +738,7 @@
       transform: translateY(-50%);
       background: grey;
       color: #D9D9D9;
+      box-shadow: 0px 2px 4px 1px #363737;
       font-size: 30pt;
       border: none;
       padding: 0 15px;
