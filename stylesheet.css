@@ -1038,7 +1038,13 @@
   .logo_items img{
     height: 45px;
     width: auto;
-    margin-inline: 15px;
+    margin-inline: 20px;
+  }
+
+  @media (max-width:768px){
+    .logo_items img{
+      margin-inline: 15px;
+    }
   }
 
   footer{
