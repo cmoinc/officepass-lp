@@ -856,30 +856,49 @@
      
    }
   .price_box{
-    width: 300px;
+    width: 350px;
     padding-block: 3px;
     margin-top: 20px;
     border-radius: 20px;
     background-color: white;
     text-align: center;
   }
+  @media (max-width:768px){
+    .price_box{
+      width: 300px;
+    }
+  }
 
   .category{
     color: #003B71;
-    font-size: small;
-    
+    font-size: 18px;
+  }
+  @media (max-width:768px){
+    .category{
+      font-size: 16px;
+    }
   }
 
   .price_amount{
     color: #E98F00;
     font-weight: bold;
+    font-size: 20px;
     line-height: 1;
     margin-top: -10px;
   }
+  @media (max-width:768px){
+    .price_amount{
+      font-size: 18px;
+    }
+  }
 
   .amount{
-    font-size: 28px;
-
+    font-size: 34px;
+  }
+  @media (max-width:768px){
+    .amount{
+      font-size: 32px;
+    }
   }
 
   /* faq */
