@@ -215,8 +215,8 @@
   .about{
     margin-inline: 15%;
     line-height: 1.5;
-    padding-block: 20px;
-    padding-inline: 50px;
+    padding-block: 10px;
+    padding-inline: 40px;
     border: solid 2px #003B71;
   }
   @media (max-width:768px){
@@ -225,9 +225,25 @@
       padding-inline: 20px
     }
   }
+  summary{
+    font-family: Noto Sans JP;
+      color: #004F9D;
+      font-weight: bold;
+      text-align: center;
+      font-size: 20pt;
+      cursor: pointer;
+      padding-block: 20px;
+  }
+  @media (max-width:768px){
+    summary{
+      font-size: 4vw;
+    }
+  }
+ 
 
   .about_txt{
     color: #003B71;
+    padding-block: 20px;
   }
 
   /* space */
@@ -1002,6 +1018,9 @@
   }
 
   input:checked ~ h1 ~ div.p{
+    max-height:400px;
+  }
+  input:checked ~ h3 ~ div.p{
     max-height:400px;
   }
 
